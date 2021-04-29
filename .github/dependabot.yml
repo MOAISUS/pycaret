@@ -1,0 +1,33 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: xgboost
+    versions:
+    - 1.3.3
+    - 1.4.0
+  - dependency-name: catboost
+    versions:
+    - 0.24.4
+    - "0.25"
+  - dependency-name: yellowbrick
+    versions:
+    - 1.2.1
+    - "1.3"
+  - dependency-name: pandas-profiling
+    versions:
+    - 2.10.0
+    - 2.10.1
+  - dependency-name: scikit-learn
+    versions:
+    - 0.24.1
+  - dependency-name: shap
+    versions:
+    - 0.38.1
+  - dependency-name: kmodes
+    versions:
+    - 0.10.2
